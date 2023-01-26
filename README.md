@@ -45,8 +45,8 @@ A Place in the Cloud that stores all the docker images \
 Go to: https://labs.play-with-docker.com/ \
 Create a new instance \
 Type in the command line \ 
-	`docker pull mcr.microsoft.com/mcr/hello-world` \
-	`docker run mcr.microsoft.com/mcr/hello-world` \
+	`docker pull mcr.microsoft.com/mcr/hello-world` 
+	`docker run mcr.microsoft.com/mcr/hello-world` 
 Congrats! You ran your first Docker Application. \
 
 # Docker Files
@@ -63,23 +63,23 @@ Go to: https://labs.play-with-docker.com/ \
 Create a new instance \
 Type in the command line \ 
 
-	`mkdir web` \
-	`Cd web` \
-	`Git init` \ 
-	`git pull https://github.com/alexmmosac/odin-RPS.git` \
-	`Cd ..`  \
-	`Touch Dockerfile` \
+	`mkdir web` 
+	`Cd web` 
+	`Git init`  
+	`git pull https://github.com/alexmmosac/odin-RPS.git` 
+	`Cd ..`  
+	`Touch Dockerfile` 
 	`Vim docker file` 
 
 Type:
 
-	`FROM yiisoftware/yii2-php:7.1-apache` \
-	`ADD web /app/web` \
-	`EXPOSE 80:80` \
+	`FROM yiisoftware/yii2-php:7.1-apache` 
+	`ADD web /app/web` 
+	`EXPOSE 80:80` 
 
 *(HIT : wq -> Then Enter) \
 
-	`Sudo docker build -t rps .` \
-	`Sudo docker run -p 8080:80 rps` \
+	`Sudo docker build -t rps .` 
+	`Sudo docker run -p 8080:80 rps` 
 
 Congrats!   
