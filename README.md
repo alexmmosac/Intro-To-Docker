@@ -62,24 +62,24 @@ So lets talk about docker-files. \
 Go to: https://labs.play-with-docker.com/ \
 Create a new instance \
 Type in the command line \ 
-`
-	mkdir web \
-	Cd web \
-	Git init \ 
-	git pull https://github.com/alexmmosac/odin-RPS.git \
-	Cd ..  \
-	Touch Dockerfile \
-	Vim docker file 
-`
+
+	`mkdir web` \
+	`Cd web` \
+	`Git init` \ 
+	`git pull https://github.com/alexmmosac/odin-RPS.git` \
+	`Cd ..`  \
+	`Touch Dockerfile` \
+	`Vim docker file` 
+
 Type:
-`
-	FROM yiisoftware/yii2-php:7.1-apache \
-	ADD web /app/web \
-	EXPOSE 80:80 \
-`
+
+	`FROM yiisoftware/yii2-php:7.1-apache` \
+	`ADD web /app/web` \
+	`EXPOSE 80:80` \
+
 *(HIT : wq -> Then Enter) \
-`
-	Sudo docker build -t rps . \
-	Sudo docker run -p 8080:80 rps \
-`
+
+	`Sudo docker build -t rps .` \
+	`Sudo docker run -p 8080:80 rps` \
+
 Congrats!   
